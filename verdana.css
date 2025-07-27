@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: young-serif;
+  color: hsl(30, 10%, 34%);
+}
+
+body {
+  margin: 0;
+  padding: 20px 30px;
+  line-height: 1.6;
+
+}
+
+@font-face {
+  font-family: young-serif;
+  src: url(YoungSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: outfit;
+  src: url(Outfit-VariableFont_wght.ttf);
+}
+
+img {
+  border-radius: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 2;
+  color: hsl(24, 5%, 18%);
+}
+
+h2 {
+  color: hsl(14, 45%, 36%);
+  font-size: 2rem;
+  margin-block-end: 10px;
+}
+
+p {
+  font-family: outfit;
+}
+
+section {
+  margin-block: 20px;
+}
+
+.prep-ctn {
+  background-color:  hsl(331, 81%, 94%);
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin-block-start: 30px;
+  margin-block-end: 30px;
+}
+
+.prep-ctn p {
+  font-size: 1.25rem;
+  color:  hsl(332, 55%, 22%);
+  font-weight: 500;
+  margin-block-end: 5px;
+}
+
+.prep-ctn li {
+  list-style-position: inside;
+  font-family: outfit;
+  padding-left: 10px;
+}
+
+.prep-ctn li strong,
+.instruction-ctn strong {
+  font-family: Outfit;
+}
+
+.prep-ctn li::marker {
+  color:  hsl(332, 55%, 20%);
+}
+
+.ingredients-ctn li {
+  list-style-position: inside;
+  font-family: outfit;
+  line-height: 2.2;
+  padding-left: 10px;
+}
+
+.ingredients-ctn li::marker,
+.instruction-ctn li::marker  {
+  color:  hsl(14, 45%, 36%);
+}
+
+.instruction-ctn {
+ 
+}
+
+.instruction-ctn li {
+  margin-inline-start: 25px;
+  font-family: outfit;
+  padding-left: 15px;
+}
+
+.instruction-ctn li::marker {
+  font-weight: bold;
+  line-height: 2.5;
+}
+
+.nutrition-ctn th {
+  font-family: outfit;
+  font-weight: 400;
+}
+
+table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-family: outfit;
+  padding-left: 25px;
+}
+
+td:last-child {
+  text-align: left;
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+@media (width < 600px) {
+  body {
+    padding: 0;
+  }
+
+  img {
+    border-radius: 0;
+  }
+
+  section {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+
+  h1 {
+    line-height: 1.2;
+    font-weight: 500;
+  }
+
+  h2 {
+    margin-block-start: 30px;
+  }
+
+  .prep-ctn li {
+    line-height: 2;
+  }
+
+  hr {
+    margin-inline: 30px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  td {
+    padding: 8px 0;
+    padding-left: 40px;
+    text-align: right;
+  }
+
+  td:first-child {
+    text-align: start;
+  }
+
+  td:last-child {
+    text-align: left;
+  }
+  
+}
+
+@media (width > 1440px) {
+  main {
+    min-width: 1000px;
+    background-color: salmon;
+  }
+}
+
+
