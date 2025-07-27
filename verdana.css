@@ -153,6 +153,7 @@ tr:last-child td {
   h1 {
     line-height: 1.2;
     font-weight: 500;
+    margin-bottom: 10px;
   }
 
   h2 {
